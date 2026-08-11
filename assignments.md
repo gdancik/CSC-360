@@ -6,7 +6,7 @@ order: 3
 exclude_from_nav: false 
 ---
 
-* [Course Setup]({{ site.baseurl }}/data/info/CSC360_Setup.pdf) 
+* Download and set up Visual Studio Code by following the [course setup]({{ site.baseurl }}/data/info/CSC360_VS_Code_Setup.pdf) instructions. 
 {% comment %}
  [Blackboard](http://easternct.blackboard.com))
 {% endcomment %}

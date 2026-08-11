@@ -8,8 +8,7 @@ exclude_from_nav: true
 
 <!--<div id = 'hidden' class = 'hide' markdown="1">-->
 * [Course Introduction]({{ site.baseurl }}/data/notes/Intro.pdf)
-    * [Introductory Jupyter Notebook]({{ site.baseurl }}/data/notes/intro.ipynb)
-
+* [Java Fundamentals]({{ site.baseurl }}/data/notes/JavaFundamentals.zip)
 {% comment %}
 <br><br>
 <center>
