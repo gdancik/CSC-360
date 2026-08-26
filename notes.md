@@ -3,7 +3,7 @@ layout: page
 title: Course Notes 
 permalink: /notes/
 order: 2
-exclude_from_nav: true
+exclude_from_nav: false 
 ---
 
 <!--<div id = 'hidden' class = 'hide' markdown="1">-->
