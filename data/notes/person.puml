@@ -1,0 +1,58 @@
+@startuml
+/'
+Example PlantUML class diagram
+https://www.plantuml.com/
+'/
+
+
+'Display +/- rather than shape icon next to fields and methods
+skinparam classAttributeIconSize 0
+
+'hide circle at the top of each class
+hide circle
+
+'Represents a person who can own 0 or more cars
+class Person {
+  -{static} nextId: int = 1
+  -id: int
+  -firstName: String
+  -lastName: String
+  -car: Car
+  --
+  +Person(firstName: String, lastName: String)
+  +Person()
+  +getFirstName(): String
+  +getLastName(): String
+  +setFirstName(firstName: String): void
+  +setLastName(lastName: String): void
+  +getFullName(): String
+  +toString(): String
+  +{static} main(args: String[]): void
+}
+
+note right of Person::toString
+  String using format Person<firstName, lastName>
+end note
+
+note right of Person::getFullName
+  returns full name in format lastName, firstName
+end note
+
+'Car with a make, model, and year
+class Car {
+-make: String
+-model: String
+-year: int
++Car(make: String, model: String)
++describe(): String
+}
+
+note right of Car::describe
+  return format of {year} {make} {model}
+end note
+
+'A person has 0 or more cars (aggregation)
+'See: https://www.gleek.io/blog/aggregation-vs-composition
+'Use 'o' for aggregation and '*' for composition
+Person "1" o-- "*" Car : has
+@enduml
