@@ -1,0 +1,53 @@
+@startuml
+
+/'
+Example PlantUML class diagram
+https://www.plantuml.com/
+'/
+
+'Display +/- rather than shape icon next to fields and methods
+skinparam classAttributeIconSize 0
+
+'hide circle at the top of each class
+hide circle
+class Person {
+  -id: int
+  -firstName: String
+  -lastName: String
+  -cars: Car[]   'List<Car> would be better; we will discuss this datatype soon
+  --
+  +Person(firstName: String, lastName: String)
+  +getFirstName(): String
+  +getLastName(): String
+  +getCars(): Car []
+  +addCar(car: Car): void
+  +removeCar(car: Car): void
+  +getFullName(): String
+  +toString(): String
+}
+
+class Car {
+  -make: String
+  -model: String
+  -year: int
+  --
+  +Car(make: String, model: String, year: int)
+  +describe(): String
+}
+
+note right of Person::getFullName
+  returns full name in format lastName, firstName
+end note
+
+note right of Car::describe
+  return format of {year} {make} {model}
+end note
+
+' One person can own multiple cars
+' The 'o--' is for aggregation (cars can exist independently of person) 
+' Using '*--' is for composition (deleting the main object destroys its parts)
+Person "1" o-- "*" Car : owns >
+@enduml
+
+
+

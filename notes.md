@@ -11,7 +11,7 @@ exclude_from_nav: false
 * [Java Fundamentals]({{ site.baseurl }}/data/notes/JavaFundamentals.zip)
 * [Methods And Classes]({{ site.baseurl }}/data/notes/Methods.pdf)
 	* [Example Code]({{ site.baseurl }}/data/notes/MethodsAndClasses.zip)
-	* [UML Example]({{ site.baseurl }}/data/notes/Person.puml)
+	* [UML Example]({{ site.baseurl }}/data/notes/person_with_car.puml)
 {% comment %}
 <br><br>
 <center>
