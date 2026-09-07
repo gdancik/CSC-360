@@ -1,0 +1,130 @@
+/'
+Example demonstrating composition, aggregation, association, and dependency.
+Composition is when the child object (or object being owned) cannot exist without the parent (owner).
+   For example, composition is used to model the relationship between a house and a room. One house owns 1 or more rooms. The rooms
+     do not exist independently of the house. Notation: A "num1" *-- "num2" B : description > 
+Aggregation is when the child object (or object being owned) can exist without the parent (owner).
+   For example, aggregation is used to model the relationship between a person who owns a house. A person can own a house, but the house exists
+      without the person. Notation: A "num1" o-- "num2" B : description >
+Association is a general relationship when there is no ownership or lifecycle dependency, but the relationship is permanent (stored).
+   For example, association is used to model the relationship between a person who lives in a house.
+      Notation: A "num1" -- "num2" B : description >
+Dependency (or dependence) is a the weakest relationship where one class temporarily uses another.
+   For example, dependence is used to model the relationship between a mail carrier and a house
+      Notation: A "num1" .-> B : description >
+
+    
+
+'/
+
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class House {
+  -address: String
+  -yearBuilt: int
+  -squareFootage: double
+  -rooms: Set<Room>
+  -residents: Set<Person>
+  --
+  +House(address: String, yearBuilt: int, squareFootage: double)
+  +addRoom(name: String, area: double, floorNumber: int): Room
+  +getAddress(): String
+  +getRooms(): Set<Room>
+  ~addResident(person: Person): void
+  ~removeResident(person: Person): void
+  +getResidents(): Set<Person>
+}
+
+class Room {
+  -name: String
+  -area: double
+  -floorNumber: int
+  --
+  ~Room(name: String, area: double, floorNumber: int)
+  +getName(): String
+  +getArea(): double
+}
+
+class Person {
+  -firstName: String
+  -lastName: String
+  -residences: Set<House>
+  -ownedHouses: Set<House>
+  --
+  +Person(firstName: String, lastName: String)
+  +getFullName(): String
+  +moveIn(house: House): void
+  +moveOut(house: House): void
+  +getResidences(): Set<House>
+  +buyHouse(house: House): void
+  +sellHouse(house: House): void
+  +getOwnedHouses(): Set<House>
+  +toString(): String
+}
+
+class MailCarrier {
+  -employeeId: String
+  --
+  +MailCarrier(employeeId: String)
+  +deliverMail(destination: House): void
+}
+
+note right of MailCarrier::deliverMail
+  dependency: The MailCarrier does not store 
+  the House as a variable. It just temporarily 
+  uses it as a parameter to do a job.
+end note
+
+note right of House::addRoom
+  composition: this is the ONLY way to create a Room.
+  A Room cannot exist apart from a House.
+end note
+
+note right of Room::Room
+  composition: this is a package-private constructor;
+  a Room can only be created inside a House
+end note
+
+note right of Person::moveIn
+  Creates a two-way association; The Person becomes a resident
+  of the House, and the House becomes a residence of the Person,
+  but neither own the other one. 
+end note
+
+note right of Person::buyHouse
+  aggregation: House is created via 'new House(...)'
+  independently of any owner, and buying/selling
+  just changes which Person, if any, references it
+end note
+
+' Composition: enforced via factory method + package-private constructor
+House "1" *-- "1..*" Room : contains >
+note on link
+  Composition is denoted by a filled in diamond
+end note
+
+' Aggregation: a House can exist before, after, or without a Person owning it
+Person "0..1" o-- "0..*" House : owns >
+note on link
+  Aggregation is denoted by an open diamond
+end note
+
+' Association: no ownership or lifecycle dependency
+Person "0..*" -- "0..*" House : lives in >
+note on link
+  Association is denoted by a solid line with no diamonds
+end note
+
+
+' Dependency: temporary usage with a dashed arrow
+MailCarrier .–> House : delivers to >
+note on link
+  Dependency is denoted by a dotted line
+end note
+
+@enduml
+
+
+
