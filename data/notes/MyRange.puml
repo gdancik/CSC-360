@@ -1,0 +1,32 @@
+/'
+Example of an interface
+  Use A ..|> B to denote that A implements interface B
+'/
+
+@startuml
+skinparam classAttributeIconSize 0
+
+interface FirstLastAccessor {
+  +getFirst(): int
+  +getLast(): int
+}
+
+class MyRange {
+  -arr: int
+  -range: int
+  --
+  +MyRange(a: int, b: int)
+  +getFirst(): int
+  +getLast(): int
+  +getRange(): int
+  +compareTo(otherRange: MyRange): int
+  +toString(): String
+  +{static} main(args: String[]): void
+}
+
+'MyRange implements FirstLastAccessor
+MyRange ..|> FirstLastAccessor : implements
+
+'MyRange depends on MyRange 
+MyRange ..> MyRange : uses
+@enduml
