@@ -18,8 +18,6 @@ exclude_from_nav: false
 	* [Interface UML Example]({{ site.baseurl }}/data/notes/shapes.puml) ([link](//www.plantuml.com/plantuml/png/XP51Jy9048NlyolcHea2ddiWGAA9YLv4JyR3i1tAHhfBTWQZ8l_TxkBI9XmyjVtclJUTcSa0RZ-fsMqP_Hh9eNNAOKs60V556ESu7lzCSO7giMBdbL4tf2stqTMmK-bCk831160cIa7tpHRatReT1MhGR4bahXhiQgzyRxnRsc_66u3EVMU3w0E9perX4H_m08XNDMkg5CCojZgXfCla293oyV7hYLpDoJUY4B9X528-VurYnf-se8IlSPMUm_yxTYG5z93nJJijF_l2wuP3AfVvfpgP-gK6w-heFBr5UX0bjUQ83LbNKAWbLr_VMk67jrKST91dx0vmkJZ8edIzoxsMFNSlik8TkqhGEyoebpGzmnBtmWApLjnU-HS0))
 
 
-
-
 {% comment %}
 <br><br>
 <center>
