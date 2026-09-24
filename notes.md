@@ -20,6 +20,9 @@ exclude_from_nav: false
 //www.plantuml.com/plantuml/png/bLDDRnCn4Btlhx32PGlTYlQOGrL0ukDGWMW4XoY7YNUK35dRqTXEHKF_EsklNLpp8PhBhDwyvpTlx5nP1-oy6Xgx8xq71YNa0DQ-SevfxHr-a4RVq1sAbqqJEs91SW5oOL0S6p7-Eh4smFrSl0ubGVi1lYEVpyMd-F48lQXGwPbHkmchUbQ2rW6z2Hy9VY4Ka6w1DtPiE2QzMQvEKYicUWSAsvEvE1ZgCtvBJcuNddNLa5kKko3uU40ElRKn0u9kxdFY6EmXxOQfduyguELgkKg7a2P7CD1TRTkJ3QahbEoNaTotOp3IxbJ8M0llYJOg9PQaMDNa_XkRx5i_34M2Ck1NqbKsM5l78DrquMdjAUKpeO1toD4fBJqnshAJbxv1TntXu558ZjdaNYZOuRKvO5k-bhoLXrM_zmfq7kNVRo1JwvbEQq6UyZz7UBFtrG0CkZVZrZ_7cWvBjChyQLPfFd4CqA__rUny9fvtNQnH-AVUnInTo5-4ULbDkTAk-t6PPIb0XJO9EpkxJEy-lZeCbsZ5BRbjuHT8nV6H-Wq3CLr1a9f74vXol2Zn5crpXRhtQlW9))
 	* [Javadoc]({{ site.baseurl }}/data/notes/Javadoc.pdf)
 		* [Javadoc Example]({{ site.baseurl }}/data/notes/JavadocExample.zip)
+* Github ([Overview]({{ site.baseurl }}/data/notes/Github.pdf) \|
+	[Annotated]({{ site.baseurl }}/data/notes/GithubAnnotated.pdf))
+
 
 {% comment %}
 <br><br>
