@@ -22,7 +22,7 @@ exclude_from_nav: false
 		* [Javadoc Example]({{ site.baseurl }}/data/notes/JavadocExample.zip)
 * Github ([Overview]({{ site.baseurl }}/data/notes/Github.pdf) \|
 	[Annotated]({{ site.baseurl }}/data/notes/GithubAnnotated.pdf))
-
+* [Additional Notes for Project \#1]({{ site.baseurl }}/data/notes/Project1_Background.pdf) 
 
 {% comment %}
 <br><br>
