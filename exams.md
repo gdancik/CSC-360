@@ -11,7 +11,7 @@ order: 4
 * [Quiz 2 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz2_Practice.pdf)
 * [Quiz 3 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz3_Practice.pdf)
 * [JavaDoc / Git Practice]({{ site.baseurl }}/data/exams/CSC360_JavaDoc_and_Git_Practice.pdf)
+* [Exam I Overview]({{ site.baseurl }}/data/exams/ExamIOverview.docx)
 {% comment %}
-* [Python Assessment Practice]({{ site.baseurl }}/data/exams/assessmentPractice.ipynb)
 <hr style = "height:1px; background-color:red;">
 {% endcomment %}
