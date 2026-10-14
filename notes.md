@@ -23,6 +23,8 @@ exclude_from_nav: false
 * Github ([Overview]({{ site.baseurl }}/data/notes/Github.pdf) \|
 	[Annotated]({{ site.baseurl }}/data/notes/GithubAnnotated.pdf))
 * [Additional Notes for Project \#1]({{ site.baseurl }}/data/notes/Project1_Background.pdf) 
+* [Maven and JUnit]({{ site.baseurl }}/data/notes/Maven_and_JUnit.pdf) 
+	* [Example Code]({{ site.baseurl }}/data/notes/maven_with_testing.zip)
 
 {% comment %}
 <br><br>
