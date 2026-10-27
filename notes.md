@@ -28,6 +28,8 @@ exclude_from_nav: false
 	* [Example Code]({{ site.baseurl }}/data/notes/maven_with_testing.zip)
 * [More JUnit]({{ site.baseurl }}/data/notes/More_JUnit.pdf) 
 	* [Example Code]({{ site.baseurl }}/data/notes/calendar.zip)
+* [JavaFX]({{ site.baseurl }}/data/notes/JavaFX.pdf) 
+	* [Example Code]({{ site.baseurl }}/data/notes/javafx_example.zip)
 
 <br><br>
 <center>
