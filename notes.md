@@ -29,7 +29,8 @@ exclude_from_nav: false
 * [More JUnit]({{ site.baseurl }}/data/notes/More_JUnit.pdf) 
 	* [Example Code]({{ site.baseurl }}/data/notes/calendar.zip)
 * [JavaFX]({{ site.baseurl }}/data/notes/JavaFX.pdf) 
-	* [Example Code]({{ site.baseurl }}/data/notes/javafx_example.zip)
+	* [JavaFX Example Code]({{ site.baseurl }}/data/notes/javafx_example.zip)
+	* [Lambda Expression Code]({{ site.baseurl }}/data/notes/lambda_example.zip)
 
 <br><br>
 <center>
