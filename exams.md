@@ -13,6 +13,7 @@ order: 4
 * [JavaDoc / Git Practice]({{ site.baseurl }}/data/exams/CSC360_JavaDoc_and_Git_Practice.pdf)
 * [Exam I Overview]({{ site.baseurl }}/data/exams/ExamIOverview.docx)
 * [Quiz 4 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz4_Practice.pdf)
+* [Quiz 5 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz5_Practice.pdf)
 {% comment %}
 <hr style = "height:1px; background-color:red;">
 {% endcomment %}
