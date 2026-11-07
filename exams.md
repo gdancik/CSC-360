@@ -14,6 +14,8 @@ order: 4
 * [Exam I Overview]({{ site.baseurl }}/data/exams/ExamIOverview.docx)
 * [Quiz 4 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz4_Practice.pdf)
 * [Quiz 5 Practice]({{ site.baseurl }}/data/exams/CSC360_Quiz5_Practice.pdf)
+* [Exam II Overview]({{ site.baseurl }}/data/exams/ExamIIOverview.pdf)
+	* [Exam II Practice Code]({{ site.baseurl }}/data/exams/exam2_practice.zip)
 {% comment %}
 <hr style = "height:1px; background-color:red;">
 {% endcomment %}
